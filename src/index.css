@@ -1,13 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: rgb(40, 36, 32);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 30, 25, 1) 0% rgba(40, 36, 32, 1) 100%
+  );
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card-holder {
+  max-width: 810px;
+  margin: auto;
+  width: 100%;
+}
+
+.box {
+  background: rgb(38, 34, 30);
+  background: linear-gradient(
+    90deg,
+    rgba(38, 34, 30, 1) 0%,
+    rgba(48, 43, 40, 1) 100%
+  );
+  max-width: 350px;
+  width: 100%;
+  margin: auto;
+  border-radius: 8px;
+  color: #fff;
+  padding: 20px;
+  margin-top: 56px;
+
+  box-shadow: 0px 0px 18px 10px rgb(23 23 23 / 43%);
+}
+.hours {
+  color: #716e6b;
+  text-align: right;
+}
+
+p {
+  color: #6e6b69;
+}
+.weather {
+  text-align: center;
+  margin-top: -30px;
+}
+
+.rainy {
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+
+  margin: auto;
+  display: block;
+  height: 200px;
+}
+
+.icon {
+  color: #676360;
+  margin-left: 20px;
+  font-size: 30px;
+  margin: 5px;
+}
+
+.temp {
+  margin-left: 80px;
+  font-weight: 300;
+  margin-top: 5px;
+  font-size: 60px;
+}
+
+.loading {
+  max-width: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
